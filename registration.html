@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="..//Peaky-Blinders/CSS/main.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="byorder.png" type="image/x-icon">
+    <title>Регистрация</title>
+
+    <style>
+        input:hover{
+            background-color: blueviolet;
+        }
+        input:focus{
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        input:active{
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <a id="top"></a>
+
+    <body>
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black; color: aliceblue;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="..//Peaky-Blinders/face.png" alt="" width="50"  class="d-inline-block align-text-center">
+                         Острые Пузырьки
+                      </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" class="ms-auto">
+                    <li class="nav-item">
+                        <a id="hz" class="nav-link" href="index.html">Главная  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="hz" class="nav-link" href="contacts.html">Контакты  </a>
+                    </li>
+                    <li id="hz" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Партнеры  
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="http://dh-online.ru/">Доктор Хаус</a></li>
+                        <li><a class="dropdown-item" href="http://breaking-bad-online.ru/">Braking Bag</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://www.kinopoisk.ru/">Кинопоиск</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a id="hz" class="nav-link" href="about.html">Описание</a>
+                    </li>
+                    <li class="nav-item">
+                        
+                        <div class="top_menu_item_reg">
+                            <a href="login.html">
+                                <svg width="400" height="70">
+                                    <rect x="20" y="2" rx="20" ry="20" width="150" height="40"
+                                    style="fill:rgb(3, 71, 77);stroke:rgb(255, 255, 255);stroke-width:3;"/>
+                                    <text fill="white" font-size="18" x="70" y="27">войти</text>
+                                 </svg>
+                            </a>
+                        </div>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                    <button id="search_btn" class="btn btn-outline-success" type="submit">Поиск</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+           </div>
+           
+        </div>
+    <div class="main_container">
+        <div id="maindiv">
+            <div id="left_column"><b>Смотреть <br>
+                <ul>
+                    <li><a href="index.html">1 сезон</a> <br>
+                        <img class="img_ grow" src="../multipage/1 ses.jpg" alt=""></li>
+                        <li><a href="index.html">2 сезон</a> <br>
+                        <img class="img_ grow" src="../multipage/2 ses.jpg" alt=""></li>
+                        <li><a href="index.html">3 сезон</a> <br>
+                        <img class="img_ grow" src="../multipage/3 ses.jpg" alt=""></li>
+                        <li><a href="index.html">4 сезон</a> <br>
+                        <img class="img_ grow" src="../multipage/4 sez.jpg" alt=""></li>
+                        <li><a href="index.html">5 сезон</a> <br>
+                        <img class="img_ grow" src="../multipage/5 sez.jpg" alt=""></li>
+                        <li><a href="index.html">6 сезон</a> <br>
+                        <img class="img_ grow" src="../multipage/6 sez.jpg" alt=""></li>
+                        
+                </ul></b></div>
+            <div id="center">
+               <div id="reg_form">
+                <form method="post" id="reg" action="/process.aspx">
+                    <fieldset>
+                    <table><legend>Регестрация</legend>
+                        <tr>
+                            <td><label for="user_name">Имя:</label></td>
+                            <td><input type="text" placeholder="Ваше имя" tabindex="1" id="user_name" name="user_name" required></td>
+                        </tr>
+                         <tr>
+                            <td><label for="user_lastname">Фамилия:</label></td><br>
+                            <td><input type="text" id="user_lastname" placeholder="Ваша фамилия" tabindex="2" name="user_lastname" required></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <label for="male_gender">Мужчина</label>
+                                <input type="radio" id="male_gender" value="male" name="gender" tabindex="1" checked="checked" required>
+                                <label for="gender_female">Женщина</label>
+                                <input type="radio" id="female_gender" value="female" name="gender">
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Предпочтения:</label></td>
+                            <td>
+                                <div class="flex_container">
+                                <div class="item"> Комедии&nbsp; <input type="checkbox" name="tech_c++" value="1"></div>
+                                <div class="item">Драмы&nbsp; <input type="checkbox" name="tech_c#" value="1"></div>
+                                <div class="item">Мультфильмы&nbsp; <input type="checkbox" name="tech_sql" value="1"></div>
+                                <div class="item"> Боевики&nbsp; <input type="checkbox" name="tech_html" value="1"></div>
+                            </div>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="user_email">Email</label></td>
+                            <td><input type="email" name="user_email" id="user_email" placeholder="Ваша почта" required> </td>
+                        </tr>
+                        <tr>
+                            <td><label for="user_number">Номер телефона</label></td>
+                            <td><input type="number" required name="user_number" id="user_number" placeholder="+7-***-***-**-**" pattern="\+\d-\d{3}-\d{3}-\d{2}-\d{2}"></td>
+                        </tr>
+                       <tr>
+                        <td><label for="user_date" required>Дата рождения</label></td>
+                        <td><input type="date" name="user_date" id="user_date"></td>
+                       </tr>
+                       <tr>
+                        <td><label for="user_time">Время</label></td>
+                        <td><input type="time" name="user_time" id="user_time"></td>
+                       </tr>
+                       <tr>
+                        <td><label for="">Город</label></td>
+                        <td>
+                            <select name="user_city" id="user_city">
+                            <optgroup label="Деревни">
+                                <option value="1" selected="selected">Макеевка</option>
+                                <option value="2">Иваньково</option>
+                                <option value="3">Ватутино</option>
+                            </optgroup>
+                            <optgroup label="Сёла">
+                                <option value="4">Прохоровка</option>
+                                <option value="5">Ивановка</option>
+                                <option value="6">КОзырево</option>
+                            </optgroup>
+                        </select>
+                        </td>
+                       </tr>
+                       <tr>
+                        
+                       <tr>
+                        <td><label for="user_about">Расскажите о вас</label></td>
+                        <td><textarea name="user_about" cols="50" rows="50" placeholder="Я люблю вкусно покушать" style="max-width: 100px; max-height: 100px" id="user_about"></textarea></td>
+                       </tr>
+                       <tr>
+                        <td colspan="2">
+                        <div class="flex_container">
+                        
+                        <div class="item"><label > Загрузите ваше фото</label></div>
+                        <div class="item"><input class="Button_" type="file" value="Submit" accept="application/pdf"></div>
+                         </td>
+                       </tr>
+                        <tr>
+                            <td><label for="user_salary">Сколько времени <br> вы проводите за <br> просмотром фильмов</label></td>
+                            <td><input type="range" min="100" max="10000" name="user_salary" id="user_salary"></td>
+                        </tr>
+                        <tr>
+                            <td><label  for="user_reset">Очистить форму</label></td>
+                            <td><input  type="reset" name="user_reset"></td>
+                        </tr>
+                      
+                        
+                        <td><br></td>
+                    </table>
+                    <input class="Button_ swing" type="submit" value="Зарегестрироваться">
+                    </fieldset>
+                    <!-- <input type="hidden" name="a" value="1">
+                    <input type="hidden" name="c" value="2">
+                    <input type="hidden" name="a" value="3">
+                    <input type="submit" value="Отправить форму"> -->
+                </form>
+            </div>
+            </div>
+            <div id="right_column"><b>Реклама</b><br>
+            <img class="img_" src="../multipage/gifi.webp" alt="" srcset=""><br>
+            <img class="img_" src="../multipage/giphy.webp" alt="" srcset="">
+        </div>
+        </div>
+        <div>
+        
+    </div>
+    </div>
+    <div>
+        <a href="#top">Back to top</a>
+    </div>
+    <div id="footer">
+       <br>
+       <br>
+        <div><img src="..//multipage/peaky-blinders.png"></div>
+        Email: <a href ="mailto:callsoul@gmail.com">callsoul@gmail.com</a><br>
+
+        Tel: <a href ="tel: +7-999-190-99-99">+7-999-190-99-99</a> <br>
+
+        Ftp: <a href ="ftp://ftp.loc.gov/pub/lc.internet/ftp.txt">ftp.txt</a><br><br>
+    </div>
+<div>
+    <a href="https://www.google.com/" target="_blank">
+        <!-- <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">  -->
+    </a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>
+<body>
+    
+</body>
+</html>

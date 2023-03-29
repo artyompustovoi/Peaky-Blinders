@@ -1,0 +1,19 @@
+.navbar .navbar-nav .nav-link, #test {
+  font-size: 1.2em;
+  padding: 0.5em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#int {
+  color: white;
+  margin-left: 15px;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+#int_ {
+  color: rgb(255, 255, 255);
+  margin-left: 15px;
+  font-weight: bold;
+}

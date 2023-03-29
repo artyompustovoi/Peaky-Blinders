@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="..//Peaky-Blinders/CSS/main.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="byorder.png" type="image/x-icon">
+    <title>Вход</title>
+</head>
+
+<body>
+    <a id="top"></a>
+
+    <body>
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black; color: aliceblue;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="..//Peaky-Blinders/face.png" alt="" width="50"  class="d-inline-block align-text-center">
+                         Острые Пузырьки
+                      </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" class="ms-auto">
+                    <li class="nav-item">
+                        <a id="hz" class="nav-link" href="index.html">Главная  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="hz" class="nav-link" href="contacts.html">Контакты  </a>
+                    </li>
+                    <li id="hz" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Партнеры  
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="http://dh-online.ru/">Доктор Хаус</a></li>
+                        <li><a class="dropdown-item" href="http://breaking-bad-online.ru/">Braking Bag</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://www.kinopoisk.ru/">Кинопоиск</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a id="hz" class="nav-link" href="about.html">Описание</a>
+                    </li>
+                    <li class="nav-item">
+                        
+                        <div class="top_menu_item_reg">
+                            <a href="registration.html">
+                                <svg width="400" height="70">
+                                    <rect x="20" y="2" rx="20" ry="20" width="200" height="40"
+                                    style="fill:rgb(3, 71, 77);stroke:rgb(255, 255, 255);stroke-width:3;"/>
+                                    <text fill="white" font-size="18" x="70" y="27">Регистрация</text>
+                                 </svg>
+                            </a>
+                        </div>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                    <button id="search_btn" class="btn btn-outline-success" type="submit">Поиск</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+           </div>
+    <div class="main_container">
+        <div id="maindiv">
+            <div id="left_column"><b>Смотреть <br>
+                <ul>
+                    <li><a href="index.html">1 сезон</a> <br>
+                        <img class="img_ grow" src="../multipage/1 ses.jpg" alt=""></li>
+                        <li><a href="index.html">2 сезон</a> <br>
+                        <img class="img_ grow" src="../multipage/2 ses.jpg" alt=""></li>
+                        <li><a href="index.html">3 сезон</a> <br>
+                        <img class="img_ grow" src="../multipage/3 ses.jpg" alt=""></li>
+                        <li><a href="index.html">4 сезон</a> <br>
+                        <img class="img_ grow" src="../multipage/4 sez.jpg" alt=""></li>
+                        <li><a href="index.html">5 сезон</a> <br>
+                        <img class="img_ grow" src="../multipage/5 sez.jpg" alt=""></li>
+                        <li><a href="index.html">6 сезон</a> <br>
+                        <img class="img_ grow" src="../multipage/6 sez.jpg" alt=""></li>
+                        
+                </ul></b></div>
+            <div id="center">
+                <form method="post" id="log" action="/process.aspx">
+                    <fieldset>
+                        <table width="100%"><legend>Вход</legend>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="flex_container">
+                                        <div class="item"><label>Логин:</label></div>
+                                        <div class="item"><input type="text" id="login" name="login" required></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="flex_container">
+                                        <div class="item"><label>Пароль:</label></div>
+                                        <div class="item"><input type="password" id="password" name="password" required></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>  <br></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="flex_container">
+                                        <div class="item swing" id="reg_btn"><input class="Button_" type="submit" value="Войти"></div>
+                                        <div class="item"><input class="Button_" type="button" value="Регистрация" name="save_password" onclick ="location.href='registration.html'"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- <tr><br>
+                                <tr>
+                                    <td id="reg_btn"><input class="Button_" type="submit" value="Войти"></td>
+                                    <td id="reg_btn"><input class="Button_" type="button" value="Регистрация" name="save_password" onclick ="location.href='registration.html'">
+                                    </td>
+                                </tr> -->
+                               
+                      
+                        </table>
+                    </fieldset>
+                   
+                
+                    </form>
+            </div>
+            <div id="right_column"><b>Реклама</b><br>
+            <img class="img_" src="../multipage/gifi.webp" alt="" srcset=""><br>
+            <img class="img_" src="../multipage/giphy.webp" alt="" srcset="">
+        </div>
+        </div>
+        <div>
+        
+    </div>
+    </div>
+    <div>
+        <a href="#top">Back to top</a>
+    </div>
+    <div id="footer">
+       <br>
+       <br>
+        <div><img src="..//multipage/peaky-blinders.png"></div>
+        Email: <a href ="mailto:callsoul@gmail.com">callsoul@gmail.com</a><br>
+
+        Tel: <a href ="tel: +7-999-190-99-99">+7-999-190-99-99</a> <br>
+
+        Ftp: <a href ="ftp://ftp.loc.gov/pub/lc.internet/ftp.txt">ftp.txt</a><br><br>
+    </div>
+<div>
+    <a href="https://www.google.com/" target="_blank">
+        <!-- <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">  -->
+    </a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
+<body>
+    
+</body>
+</html>

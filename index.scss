@@ -1,0 +1,19 @@
+%TemplateForNavbar
+{
+    font-size:1.2em;
+    padding:0.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#test{
+    @extend %TemplateForNavbar;
+}
+#int{
+color:white;
+margin-left: 15px;
+}
+.navbar .navbar-nav .nav-link{
+    @extend %TemplateForNavbar;
+}
+.navbar-brand{
+    font-size:1.5em;  
+}
